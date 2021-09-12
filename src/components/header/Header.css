@@ -1,0 +1,106 @@
+.sparrow {
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.logoLink {
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    color: rgb(200,200,200);
+    text-shadow: 5px 5px 2px rgba(200,200,200,0.2);
+}
+
+.pageTitle {
+    font-size: 80px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.subTitle {
+    font-size: 30px;
+    padding-top: 40px;
+    margin-right: 170px;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.hidden {
+    color: rgb(30,30,30);
+    text-shadow: none;
+}
+
+.hidden::before {
+    content: '|';
+    color: rgb(200,200,200);
+    text-shadow: 5px 5px 2px rgba(200,200,200,0.2);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.branchMenu {
+    background-color: rgb(60, 60, 60);
+    min-width: 100%;
+    min-height: 40px;
+    margin-top: -23px;
+    box-shadow: 0px 5px 5px rgba(60,60,60,0.9), 0px -5px 5px rgba(60,60,60,0.9);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a.item {
+    text-decoration: none;
+    color: rgb(200,200,200);
+}
+
+.navbar > .item {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.navbar > :first-child {
+    margin-left: 170px;
+    justify-self: flex-end;
+}
+
+.navbar > :last-child {
+    margin-left: auto;
+    margin-right: 170px;
+    justify-self: flex-end;
+}
+
+.navbar > .item.active {
+    text-decoration: underline;
+    text-decoration-color: rgba(253, 165, 0, 0.8);
+    text-decoration-style: wavy;
+}

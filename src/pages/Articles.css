@@ -1,0 +1,12 @@
+.articles {
+    display: grid;
+    grid-template-columns: 160px 1fr 1fr 1fr 1fr 1fr 1fr 160px;
+}
+
+.sideMenu {
+    display: none;
+}
+
+.article {
+    grid-column: 2/8;
+}

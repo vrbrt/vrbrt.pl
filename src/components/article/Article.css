@@ -1,0 +1,40 @@
+h2 {
+    font-family: monospace;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgba(253, 165, 0, 0.8);
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.articleLink {
+    color: rgba(253, 165, 0, 0.8);
+}
+
+.tableOfContents {
+
+}
+
+.tableOfContents > .title {
+    
+}
+
+.tableOfContents > .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.tableOfContents > .list > .item {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration-style: none;
+    color: rgb(200,200,200);
+}

@@ -1,0 +1,12 @@
+module.exports = {
+    babel: {
+        plugins: [
+            ["prismjs", {
+                "languages": ["javascript", "css", "html", "java", "shell", "log", "groovy", "sql", "csv", "properties", "yml", "docker"],
+                "plugins": ["line-numbers", "match-braces"],
+                "theme": "okaidia",
+                "css": true
+            }]
+        ]
+    }
+}
